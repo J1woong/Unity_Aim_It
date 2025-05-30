@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Git-hub_local\\Unity_Aim_It\\Aim It!\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{48241856-44D4-FFBE-FA5D-989FE7E54C6A}|Assembly-CSharp.csproj|d:\\git-hub_local\\unity_aim_it\\aim it!\\assets\\scripts\\areacirclerenderer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48241856-44D4-FFBE-FA5D-989FE7E54C6A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\areacirclerenderer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48241856-44D4-FFBE-FA5D-989FE7E54C6A}|Assembly-CSharp.csproj|d:\\git-hub_local\\unity_aim_it\\aim it!\\assets\\scripts\\targetspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48241856-44D4-FFBE-FA5D-989FE7E54C6A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\targetspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AreaCircleRenderer.cs",
+              "DocumentMoniker": "D:\\Git-hub_local\\Unity_Aim_It\\Aim It!\\Assets\\Scripts\\AreaCircleRenderer.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\AreaCircleRenderer.cs",
+              "ToolTip": "D:\\Git-hub_local\\Unity_Aim_It\\Aim It!\\Assets\\Scripts\\AreaCircleRenderer.cs",
+              "RelativeToolTip": "Assets\\Scripts\\AreaCircleRenderer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-30T13:55:15.236Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TargetSpawner.cs",
+              "DocumentMoniker": "D:\\Git-hub_local\\Unity_Aim_It\\Aim It!\\Assets\\Scripts\\TargetSpawner.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\TargetSpawner.cs",
+              "ToolTip": "D:\\Git-hub_local\\Unity_Aim_It\\Aim It!\\Assets\\Scripts\\TargetSpawner.cs",
+              "RelativeToolTip": "Assets\\Scripts\\TargetSpawner.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-30T09:30:38.802Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
