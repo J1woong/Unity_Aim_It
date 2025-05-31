@@ -57,7 +57,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\TargetSpawner.cs" />
+    <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\AreaCircleRenderer.cs" />
+    <Compile Include="Assets\Scripts\ClickManager.cs" />
     <Compile Include="Assets\Scripts\Target.cs" />
   </ItemGroup>
   <ItemGroup>

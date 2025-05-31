@@ -37,8 +37,8 @@ public class TargetSpawner : MonoBehaviour
 
         Vector3 spawnPos = is3D ? GetRandomPointInArea3D() : GetRandomPointInArea2D();
 
-        // 1/3 확률로 가짜 타겟 생성, 아니면 정상 타겟 생성
-        GameObject prefabToSpawn = (Random.value < 0.33f) ? FakePrefab : TargetPrefab;
+        // 1/4 확률로 가짜 타겟 생성, 아니면 정상 타겟 생성
+        GameObject prefabToSpawn = (Random.value < 0.25f) ? FakePrefab : TargetPrefab;
 
         GameObject newTarget = Instantiate(prefabToSpawn, spawnPos, Quaternion.identity);
         activeTargets.Enqueue(newTarget);

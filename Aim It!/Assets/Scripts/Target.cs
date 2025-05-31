@@ -2,11 +2,17 @@ using UnityEngine;
 
 public class Target : MonoBehaviour
 {
-    // 타겟 클릭 시 제거
+    public bool isFake = false;  // 인스펙터에서 반드시 가짜 타겟은 true로 설정해야 함
 
     private void OnMouseDown()
     {
+        GameManager.Instance.OnClick(); // 클릭 횟수 증가
+
+        if (isFake)
+            GameManager.Instance.OnFakeTargetRemoved();
+        else
+            GameManager.Instance.OnRealTargetRemoved();
+
         Destroy(gameObject);
-        // 필요 시 점수 증가, 효과음 재생 등 추가 구현 가능
     }
 }
