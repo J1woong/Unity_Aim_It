@@ -345,6 +345,7 @@
 "Assets/Scripts/AreaCircleRenderer.cs"
 "Assets/Scripts/ClickManager.cs"
 "Assets/Scripts/GameManager.cs"
+"Assets/Scripts/MenuController.cs"
 "Assets/Scripts/Target.cs"
 "Assets/Scripts/TargetSpawner.cs"
 -langversion:9.0

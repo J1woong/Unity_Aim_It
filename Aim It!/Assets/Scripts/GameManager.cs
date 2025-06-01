@@ -1,25 +1,28 @@
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using System.Collections;
 
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
 
-    public Text gameOverText;             // 게임 종료 메시지 UI 텍스트 (간단히 “게임 종료” 등)
+    public Text gameOverText;             // 게임 종료 메시지 UI 텍스트
     public Text accuracyText;             // 정확도 표시 UI 텍스트
     public Text timerText;                // 진행 시간 표시 UI 텍스트
     public Text realTargetCountText;      // 제거한 진짜 타겟 수 UI 텍스트
     public Text fakeTargetCountText;      // 제거한 가짜 타겟 수 UI 텍스트
     public Text totalClicksText;          // 전체 클릭 횟수 UI 텍스트
+    public Text countdownText;            // 카운트다운 텍스트 UI (3초 카운트다운)
 
     private int realTargetRemoved = 0;    // 제거한 진짜 타겟 수
     private int fakeTargetRemoved = 0;    // 제거한 가짜 타겟 수
-    private int totalClicks = 0;           // 전체 클릭 횟수
+    private int totalClicks = 0;          // 전체 클릭 횟수
 
     private int totalRealTargets = 50;    // 목표 진짜 타겟 수
 
     private bool isGameOver = false;
+    private bool isCountingDown = false; // 카운트다운 진행 여부
     private float elapsedTime = 0f;
 
     private void Awake()
@@ -36,6 +39,8 @@ public class GameManager : MonoBehaviour
         timerText.gameObject.SetActive(true);
         realTargetCountText.gameObject.SetActive(true);
         fakeTargetCountText.gameObject.SetActive(true);
+        totalClicksText.gameObject.SetActive(true);
+        countdownText.gameObject.SetActive(false);  // 카운트다운 텍스트 숨김
 
         isGameOver = false;
         realTargetRemoved = 0;
@@ -43,11 +48,20 @@ public class GameManager : MonoBehaviour
         elapsedTime = 0f;
 
         UpdateUI();
+
+        // 게임이 시작되면 카운트다운 시작
+        StartCoroutine(StartCountdown());
     }
 
     private void Update()
     {
-        if (!isGameOver)
+        // ESC 키 눌렀을 때 Menu 씬으로 이동
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            SceneManager.LoadScene("Menu"); // Menu 씬으로 전환
+        }
+
+        if (!isGameOver && !isCountingDown)
         {
             elapsedTime += Time.deltaTime;
             UpdateUI();
@@ -58,19 +72,41 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    // 전체 클릭 카운트 증가용 (모든 클릭에서 호출)
+    // 3초 카운트다운 시작
+    IEnumerator StartCountdown()
+    {
+        isCountingDown = true;
+
+        for (int i = 3; i > 0; i--)
+        {
+            countdownText.text = $"게임 시작: {i}";
+            countdownText.gameObject.SetActive(true);  // 카운트다운 텍스트 보이기
+            yield return new WaitForSeconds(1f);
+        }
+
+        countdownText.gameObject.SetActive(false);  // 카운트다운 텍스트 숨기기
+        StartGame();  // 게임 시작
+    }
+
+    private void StartGame()
+    {
+        // 게임 초기화 및 진행 시작
+        Debug.Log("게임 시작!");
+        isCountingDown = false;
+        elapsedTime = 0f;  // 타이머 초기화
+    }
+
     public void OnClick()
     {
-        if (isGameOver) return;
+        if (isGameOver || isCountingDown) return;
 
         totalClicks++;
         UpdateUI();
     }
 
-    // 진짜 타겟이 제거될 때 호출
     public void OnRealTargetRemoved()
     {
-        if (isGameOver) return;
+        if (isGameOver || isCountingDown) return;
 
         realTargetRemoved++;
         UpdateUI();
@@ -81,10 +117,9 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    // 가짜 타겟이 제거될 때 호출
     public void OnFakeTargetRemoved()
     {
-        if (isGameOver) return;
+        if (isGameOver || isCountingDown) return;
 
         fakeTargetRemoved++;
         UpdateUI();
@@ -93,11 +128,32 @@ public class GameManager : MonoBehaviour
     private void EndGame()
     {
         isGameOver = true;
-        gameOverText.gameObject.SetActive(true);
-        // 정확도 계산 및 표시
+
+        // 정확도 계산
         float accuracy = totalClicks > 0 ? ((totalRealTargets - fakeTargetRemoved) / (float)totalClicks) * 100f : 0f;
         accuracyText.text = $"정확도: {accuracy:F2}%";
+
+        // 다이아몬드 분포로 랭크 계산
+        string rank = CalculateRank(accuracy);
+        accuracyText.text += $"\n랭크: {rank}";
+
+        gameOverText.gameObject.SetActive(true);
         accuracyText.gameObject.SetActive(true);
+
+        timerText.gameObject.SetActive(false);
+        realTargetCountText.gameObject.SetActive(false);
+        fakeTargetCountText.gameObject.SetActive(false);
+        totalClicksText.gameObject.SetActive(false);
+    }
+
+    private string CalculateRank(float accuracy)
+    {
+        if (accuracy >= 95f) return "S";
+        else if (accuracy >= 85f) return "A";
+        else if (accuracy >= 70f) return "B";
+        else if (accuracy >= 50f) return "C";
+        else if (accuracy >= 30f) return "D";
+        else return "E";
     }
 
     private void UpdateUI()
