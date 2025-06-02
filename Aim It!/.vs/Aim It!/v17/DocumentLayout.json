@@ -1,29 +1,33 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Git-hub_local\\Unity_Aim_It\\Aim It!\\",
+  "WorkspaceRootPath": "C:\\Git-hub_local\\Unity_Aim_It\\Aim It!\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{48241856-44D4-FFBE-FA5D-989FE7E54C6A}|Assembly-CSharp.csproj|d:\\git-hub_local\\unity_aim_it\\aim it!\\assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{48241856-44D4-FFBE-FA5D-989FE7E54C6A}|Assembly-CSharp.csproj|c:\\git-hub_local\\unity_aim_it\\aim it!\\assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{48241856-44D4-FFBE-FA5D-989FE7E54C6A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{48241856-44D4-FFBE-FA5D-989FE7E54C6A}|Assembly-CSharp.csproj|D:\\Git-hub_local\\Unity_Aim_It\\Aim It!\\assets\\scripts\\target.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{48241856-44D4-FFBE-FA5D-989FE7E54C6A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\target.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{48241856-44D4-FFBE-FA5D-989FE7E54C6A}|Assembly-CSharp.csproj|C:\\Git-hub_local\\Unity_Aim_It\\Aim It!\\assets\\scripts\\obstaclecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48241856-44D4-FFBE-FA5D-989FE7E54C6A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\obstaclecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{48241856-44D4-FFBE-FA5D-989FE7E54C6A}|Assembly-CSharp.csproj|d:\\git-hub_local\\unity_aim_it\\aim it!\\assets\\scripts\\menucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{48241856-44D4-FFBE-FA5D-989FE7E54C6A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\menucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{48241856-44D4-FFBE-FA5D-989FE7E54C6A}|Assembly-CSharp.csproj|D:\\Git-hub_local\\Unity_Aim_It\\Aim It!\\assets\\scripts\\clickmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{48241856-44D4-FFBE-FA5D-989FE7E54C6A}|Assembly-CSharp.csproj|C:\\Git-hub_local\\Unity_Aim_It\\Aim It!\\assets\\scripts\\clickmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{48241856-44D4-FFBE-FA5D-989FE7E54C6A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\clickmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{48241856-44D4-FFBE-FA5D-989FE7E54C6A}|Assembly-CSharp.csproj|D:\\Git-hub_local\\Unity_Aim_It\\Aim It!\\assets\\scripts\\areacirclerenderer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{48241856-44D4-FFBE-FA5D-989FE7E54C6A}|Assembly-CSharp.csproj|C:\\Git-hub_local\\Unity_Aim_It\\Aim It!\\assets\\scripts\\menucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48241856-44D4-FFBE-FA5D-989FE7E54C6A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\menucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48241856-44D4-FFBE-FA5D-989FE7E54C6A}|Assembly-CSharp.csproj|C:\\Git-hub_local\\Unity_Aim_It\\Aim It!\\assets\\scripts\\target.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48241856-44D4-FFBE-FA5D-989FE7E54C6A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\target.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48241856-44D4-FFBE-FA5D-989FE7E54C6A}|Assembly-CSharp.csproj|C:\\Git-hub_local\\Unity_Aim_It\\Aim It!\\assets\\scripts\\areacirclerenderer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{48241856-44D4-FFBE-FA5D-989FE7E54C6A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\areacirclerenderer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{48241856-44D4-FFBE-FA5D-989FE7E54C6A}|Assembly-CSharp.csproj|D:\\Git-hub_local\\Unity_Aim_It\\Aim It!\\assets\\scripts\\targetspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{48241856-44D4-FFBE-FA5D-989FE7E54C6A}|Assembly-CSharp.csproj|C:\\Git-hub_local\\Unity_Aim_It\\Aim It!\\assets\\scripts\\targetspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{48241856-44D4-FFBE-FA5D-989FE7E54C6A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\targetspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -34,28 +38,39 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MenuController.cs",
-              "DocumentMoniker": "D:\\Git-hub_local\\Unity_Aim_It\\Aim It!\\Assets\\Scripts\\MenuController.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\MenuController.cs",
-              "ToolTip": "D:\\Git-hub_local\\Unity_Aim_It\\Aim It!\\Assets\\Scripts\\MenuController.cs",
-              "RelativeToolTip": "Assets\\Scripts\\MenuController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "ObstacleController.cs",
+              "DocumentMoniker": "C:\\Git-hub_local\\Unity_Aim_It\\Aim It!\\Assets\\Scripts\\ObstacleController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\ObstacleController.cs",
+              "ToolTip": "C:\\Git-hub_local\\Unity_Aim_It\\Aim It!\\Assets\\Scripts\\ObstacleController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\ObstacleController.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAUwBUAAABMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-01T08:08:45.014Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-02T08:44:44.355Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "MenuController.cs",
+              "DocumentMoniker": "C:\\Git-hub_local\\Unity_Aim_It\\Aim It!\\Assets\\Scripts\\MenuController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\MenuController.cs",
+              "ToolTip": "C:\\Git-hub_local\\Unity_Aim_It\\Aim It!\\Assets\\Scripts\\MenuController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\MenuController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-01T08:08:45.014Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "ClickManager.cs",
-              "DocumentMoniker": "D:\\Git-hub_local\\Unity_Aim_It\\Aim It!\\Assets\\Scripts\\ClickManager.cs",
+              "DocumentMoniker": "C:\\Git-hub_local\\Unity_Aim_It\\Aim It!\\Assets\\Scripts\\ClickManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\ClickManager.cs",
-              "ToolTip": "D:\\Git-hub_local\\Unity_Aim_It\\Aim It!\\Assets\\Scripts\\ClickManager.cs",
+              "ToolTip": "C:\\Git-hub_local\\Unity_Aim_It\\Aim It!\\Assets\\Scripts\\ClickManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\ClickManager.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -65,35 +80,34 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "GameManager.cs",
-              "DocumentMoniker": "D:\\Git-hub_local\\Unity_Aim_It\\Aim It!\\Assets\\Scripts\\GameManager.cs",
+              "DocumentMoniker": "C:\\Git-hub_local\\Unity_Aim_It\\Aim It!\\Assets\\Scripts\\GameManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameManager.cs",
-              "ToolTip": "D:\\Git-hub_local\\Unity_Aim_It\\Aim It!\\Assets\\Scripts\\GameManager.cs",
+              "ToolTip": "C:\\Git-hub_local\\Unity_Aim_It\\Aim It!\\Assets\\Scripts\\GameManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\GameManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAABQAAAAAAAAAAAAAABgAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-31T05:35:10.865Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "Target.cs",
-              "DocumentMoniker": "D:\\Git-hub_local\\Unity_Aim_It\\Aim It!\\Assets\\Scripts\\Target.cs",
+              "DocumentMoniker": "C:\\Git-hub_local\\Unity_Aim_It\\Aim It!\\Assets\\Scripts\\Target.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Target.cs",
-              "ToolTip": "D:\\Git-hub_local\\Unity_Aim_It\\Aim It!\\Assets\\Scripts\\Target.cs",
+              "ToolTip": "C:\\Git-hub_local\\Unity_Aim_It\\Aim It!\\Assets\\Scripts\\Target.cs",
               "RelativeToolTip": "Assets\\Scripts\\Target.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-30T16:39:45.23Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-30T16:39:45.23Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "AreaCircleRenderer.cs",
-              "DocumentMoniker": "D:\\Git-hub_local\\Unity_Aim_It\\Aim It!\\Assets\\Scripts\\AreaCircleRenderer.cs",
+              "DocumentMoniker": "C:\\Git-hub_local\\Unity_Aim_It\\Aim It!\\Assets\\Scripts\\AreaCircleRenderer.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\AreaCircleRenderer.cs",
-              "ToolTip": "D:\\Git-hub_local\\Unity_Aim_It\\Aim It!\\Assets\\Scripts\\AreaCircleRenderer.cs",
+              "ToolTip": "C:\\Git-hub_local\\Unity_Aim_It\\Aim It!\\Assets\\Scripts\\AreaCircleRenderer.cs",
               "RelativeToolTip": "Assets\\Scripts\\AreaCircleRenderer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -101,11 +115,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "TargetSpawner.cs",
-              "DocumentMoniker": "D:\\Git-hub_local\\Unity_Aim_It\\Aim It!\\Assets\\Scripts\\TargetSpawner.cs",
+              "DocumentMoniker": "C:\\Git-hub_local\\Unity_Aim_It\\Aim It!\\Assets\\Scripts\\TargetSpawner.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\TargetSpawner.cs",
-              "ToolTip": "D:\\Git-hub_local\\Unity_Aim_It\\Aim It!\\Assets\\Scripts\\TargetSpawner.cs",
+              "ToolTip": "C:\\Git-hub_local\\Unity_Aim_It\\Aim It!\\Assets\\Scripts\\TargetSpawner.cs",
               "RelativeToolTip": "Assets\\Scripts\\TargetSpawner.cs",
               "ViewState": "AgIAABMAAAAAAAAAAAAxwCoAAABZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

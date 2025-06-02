@@ -21,8 +21,8 @@ public class GameManager : MonoBehaviour
 
     private int totalRealTargets = 50;    // 목표 진짜 타겟 수
 
-    private bool isGameOver = false;
-    private bool isCountingDown = false; // 카운트다운 진행 여부
+    public bool isGameOver = false;
+    public bool isCountingDown = false; // 카운트다운 진행 여부
     private float elapsedTime = 0f;
 
     private void Awake()
@@ -79,7 +79,7 @@ public class GameManager : MonoBehaviour
 
         for (int i = 3; i > 0; i--)
         {
-            countdownText.text = $"게임 시작: {i}";
+            countdownText.text = $"{i}";
             countdownText.gameObject.SetActive(true);  // 카운트다운 텍스트 보이기
             yield return new WaitForSeconds(1f);
         }
