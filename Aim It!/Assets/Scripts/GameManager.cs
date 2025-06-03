@@ -13,11 +13,13 @@ public class GameManager : MonoBehaviour
     public Text realTargetCountText;      // 제거한 진짜 타겟 수 UI 텍스트
     public Text fakeTargetCountText;      // 제거한 가짜 타겟 수 UI 텍스트
     public Text totalClicksText;          // 전체 클릭 횟수 UI 텍스트
+    public Text obstacleHitCountText;     // 장애물 충돌 횟수 UI 텍스트
     public Text countdownText;            // 카운트다운 텍스트 UI (3초 카운트다운)
 
     private int realTargetRemoved = 0;    // 제거한 진짜 타겟 수
     private int fakeTargetRemoved = 0;    // 제거한 가짜 타겟 수
     private int totalClicks = 0;          // 전체 클릭 횟수
+    private int obstacleHitCount = 0;     // 장애물 충돌 횟수
 
     private int totalRealTargets = 50;    // 목표 진짜 타겟 수
 
@@ -41,10 +43,12 @@ public class GameManager : MonoBehaviour
         fakeTargetCountText.gameObject.SetActive(true);
         totalClicksText.gameObject.SetActive(true);
         countdownText.gameObject.SetActive(false);  // 카운트다운 텍스트 숨김
+        obstacleHitCountText.gameObject.SetActive(true); // 장애물 충돌 UI 활성화
 
         isGameOver = false;
         realTargetRemoved = 0;
         fakeTargetRemoved = 0;
+        obstacleHitCount = 0;
         elapsedTime = 0f;
 
         UpdateUI();
@@ -125,6 +129,14 @@ public class GameManager : MonoBehaviour
         UpdateUI();
     }
 
+    // 장애물 충돌 횟수 증가 함수
+    public void IncreaseObstacleHitCount()
+    {
+        if (isGameOver || isCountingDown) return;
+
+        obstacleHitCount++;
+        UpdateUI();
+    }
     private void EndGame()
     {
         isGameOver = true;
@@ -139,11 +151,6 @@ public class GameManager : MonoBehaviour
 
         gameOverText.gameObject.SetActive(true);
         accuracyText.gameObject.SetActive(true);
-
-        timerText.gameObject.SetActive(false);
-        realTargetCountText.gameObject.SetActive(false);
-        fakeTargetCountText.gameObject.SetActive(false);
-        totalClicksText.gameObject.SetActive(false);
     }
 
     private string CalculateRank(float accuracy)
@@ -162,6 +169,7 @@ public class GameManager : MonoBehaviour
         realTargetCountText.text = $"Real Target : {realTargetRemoved} / {totalRealTargets}";
         fakeTargetCountText.text = $"Fake Target : {fakeTargetRemoved}";
         totalClicksText.text = $"Click : {totalClicks}";
+        obstacleHitCountText.text = $"Hits : {obstacleHitCount}";  // 장애물 충돌 횟수 UI 갱신
     }
 
     private void RestartGame()
