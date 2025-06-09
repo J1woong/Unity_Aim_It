@@ -94,7 +94,6 @@ public class GameManager : MonoBehaviour
 
     private void StartGame()
     {
-        // 게임 초기화 및 진행 시작
         Debug.Log("게임 시작!");
         isCountingDown = false;
         elapsedTime = 0f;  // 타이머 초기화
@@ -137,29 +136,35 @@ public class GameManager : MonoBehaviour
         obstacleHitCount++;
         UpdateUI();
     }
+
     private void EndGame()
     {
         isGameOver = true;
 
         // 정확도 계산
         float accuracy = totalClicks > 0 ? ((totalRealTargets - fakeTargetRemoved) / (float)totalClicks) * 100f : 0f;
-        accuracyText.text = $"정확도: {accuracy:F2}%";
+
 
         // 다이아몬드 분포로 랭크 계산
-        string rank = CalculateRank(accuracy);
-        accuracyText.text += $"\n랭크: {rank}";
+        string rank = CalculateRank(accuracy, elapsedTime, obstacleHitCount);
+        accuracyText.text = $"정확도: {accuracy:F2}%\n랭크: {rank}";
 
         gameOverText.gameObject.SetActive(true);
         accuracyText.gameObject.SetActive(true);
     }
 
-    private string CalculateRank(float accuracy)
+    private string CalculateRank(float accuracy,float elapsedTime, int obstacleHits)
     {
-        if (accuracy >= 95f) return "S";
-        else if (accuracy >= 85f) return "A";
-        else if (accuracy >= 70f) return "B";
-        else if (accuracy >= 50f) return "C";
-        else if (accuracy >= 30f) return "D";
+        float finalScore = accuracy;
+
+        finalScore += Mathf.Max(0, (50f - elapsedTime));
+        finalScore -= Mathf.Min(50f, obstacleHits);
+
+        if (finalScore >= 90f) return "S";
+        else if (finalScore >= 80f) return "A";
+        else if (finalScore >= 55f) return "B";
+        else if (finalScore >= 45f) return "C";
+        else if (finalScore >= 20f) return "D";
         else return "E";
     }
 
